@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale: "ko-KR"
-title: "alsoj 테크 블로그"
+title: "Be excellent at what is good"
 title_separator: "-"
-subtitle: # site tagline that appears below site title in masthead
+subtitle: "alsoj Tech Blog" # site tagline that appears below site title in masthead
 name: "신민철(Shin MinCheol)"
-description: "테크 블로그"
+description: "선한 데 지혜롭기 위한 기록"
 url: "https://alsoj.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "alsoj/alsoj.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -101,15 +101,15 @@ analytics:
 
 # Site Author
 author:
-  name: "Your Name"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person."
-  location: "Somewhere"
-  email:
+  name: "신민철(Shin MinCheol)"
+  avatar: "/assets/images/bio-photo.jpg" # path of avatar image, e.g.
+  bio: "선한 데 지혜로운 개발자가 되자!"
+  location: "Seoul, Republic of Korea"
+  email: #"alsoj@naver.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:alsoj@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/alsoj"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -210,7 +210,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
