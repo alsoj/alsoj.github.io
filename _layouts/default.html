@@ -12,6 +12,7 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9296807287499962" crossorigin="anonymous"></script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
@@ -22,7 +23,6 @@
     <div class="initial-content">
       {{ content }}
     </div>
-
     {% if site.search == true %}
       <div class="search-content">
         {% include_cached search/search_form.html %}
