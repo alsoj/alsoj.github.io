@@ -18,7 +18,7 @@ minimal_mistakes_skin: "contrast" # "air", "aqua", "contrast", "dark", "dirt", "
 locale: "ko-KR"
 title: "Be excellent at what is good"
 title_separator: "-"
-subtitle: "alsoj Tech Blog" # site tagline that appears below site title in masthead
+subtitle: "alsoj's Tech Blog" # site tagline that appears below site title in masthead
 name: "신민철(Shin MinCheol)"
 description: "선한 데 지혜롭기 위한 기록"
 url: "https://alsoj.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -30,9 +30,9 @@ masthead_title: # overrides the website title displayed in the masthead, use " "
 # breadcrumbs            : false # true, false (default)
 words_per_minute: 200
 comments:
-  provider: # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  provider: "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: "alsoj"
   discourse:
     server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -275,6 +275,14 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
+
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
