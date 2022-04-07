@@ -6,8 +6,6 @@ toc_sticky: true
 toc_label: "Today I Learned"
 ---
 
-# TIL(Today I Learned)
-
 매일 공부한 것들을 기록합니다.  
 <br>
 
