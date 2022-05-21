@@ -50,6 +50,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
+  p {
+    margin-bottom: 0.3em;
+  }
+
   a[rel="permalink"]::before {
     content: "";
     position: absolute;
