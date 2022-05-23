@@ -96,6 +96,8 @@ def solution(participant, completion):
     return answer
 ```
 
+1번 풀이보다 `Hash` 자료구조를 이해하기에 적합한 풀이다.
+
 ## 풀이3 (Java)
 
 ```java
