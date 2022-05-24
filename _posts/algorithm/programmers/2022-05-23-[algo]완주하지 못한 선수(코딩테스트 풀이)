@@ -60,7 +60,7 @@ def solution(participant, completion):
 
 `collections` 모듈의 `Counter` 클래스를 사용한 풀이방법이다. 코드가 매우 간결한데, 파이썬의 가장 큰 매력이 아닐까 싶다. 이미 구현되어 있는 모듈을 잘 사용하는 것은 매우 중요한 능력이긴 하지만, 알고리즘을 공부하는데 있어서는 특정 모듈을 사용한 풀이 방법 외에도 알아두는 것을 추천한다.
 
-`collections` 모듈의 `Counter` 클래스는 파이썬의 기본 자료구조인 `Dictionary`를 확장하고 있기 때문에, `Dictionary`가 제공하는 API를 그대로 사용할 수 있다.
+`collections` 모듈의 `Counter` 클래스는 파이썬의 기본 자료구조인 `Dictionary`를 확장하고 있기 때문에, `Dictionary`가 제공하는 API를 그대로 사용할 수 있다. `Counter`를 사용했을 때 결과가 어떻게 나오는지 한 번 살펴보자.
 
 ```python
 # 예제 3에서 Counter 객체를 출력
@@ -96,7 +96,9 @@ def solution(participant, completion):
     return answer
 ```
 
-1번 풀이보다 `Hash` 자료구조를 이해하기에 적합한 풀이다.
+1번 풀이보다 `Hash` 자료구조를 이해하기에 적합한 풀이다. 1번 풀이에 비해 코드가 복잡해 보이지만, 충분히 간결하며 직관적이다.
+
+<br />
 
 ## 풀이3 (Java)
 
