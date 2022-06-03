@@ -122,4 +122,6 @@ class Solution {
 }
 ```
 
+Java를 이용한 풀이다. 실제 테스트를 풀 때는 Python을 주로 사용하지만, 업무에서 Java를 메인으로 사용하고 있기 때문에 해당 알고리즘을 Java로 구현하는 방법까지 함께 공부할 예정이다.
+
 [문제링크-프로그래머스:완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
