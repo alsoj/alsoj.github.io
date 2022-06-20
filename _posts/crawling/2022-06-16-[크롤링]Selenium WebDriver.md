@@ -55,7 +55,7 @@ driver.find_element(By.XPATH, '//button[text()="Some text"]')
 driver.find_elements(By.XPATH, '//button')
 ```
 
-- find_element
+- find_element : 해당하는 첫번째 요소를 반환
 - find_elements : 해당하는 요소들을 리스트로 반환
 
 <br />
