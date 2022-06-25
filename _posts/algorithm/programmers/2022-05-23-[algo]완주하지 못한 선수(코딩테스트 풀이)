@@ -128,4 +128,20 @@ class Solution {
 
 Java를 이용한 풀이다. 실제 테스트를 풀 때는 Python을 주로 사용하지만, 업무에서 Java를 메인으로 사용하고 있기 때문에 해당 알고리즘을 Java로 구현하는 방법까지 함께 공부할 예정이다.
 
+`Map`의 `getOrDefault` 메소드가 사용되었다. `getOrDefault`메소드는 `Map`에서 key로 값을 찾을 때 해당하는 값이 없을 경우 디폴트 값이 반환된다.
+
+```java
+// 참가자들의 이름을 key로 해서, 참가자 이름이 나올 때마다 value에 1을 더한다.
+for (String player : participant) hm.put(player, hm.getOrDefault(player, 0) + 1);
+
+// 참가자의 이름을 key로 생성된 HashMap에서 완주자의 이름으로 찾아 1을 뺀다.
+for (String player : completion) hm.put(player, hm.get(player) - 1);
+```
+
+결과적으로 `HashMap`에는 완주하지 못한 참가자의 이름에만 1의 값이 남고, 나머지 참가자의 value에는 모두 0이 매핑된다.
+
+---
+
+## 출처
+
 [문제링크-프로그래머스:완주하지 못한 선수](https://programmers.co.kr/learn/courses/30/lessons/42576)
