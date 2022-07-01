@@ -87,3 +87,12 @@ find_element(By.TAG_NAME, "tag name")
 find_element(By.CLASS_NAME, "class name")
 find_element(By.CSS_SELECTOR, "css selector")
 ```
+
+### iframe으로 전환하기
+
+```python
+browser.switch_to.frame('ID 또는 NAME')
+
+# 사용예시 - videoarea라는 id를 가진 iframe으로 브라우저를 전환한다.
+browser.switch_to.frame('videoarea')
+```
