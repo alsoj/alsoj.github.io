@@ -58,6 +58,20 @@ driver.find_elements(By.XPATH, '//button')
 - find_element : 해당하는 첫번째 요소를 반환
 - find_elements : 해당하는 요소들을 리스트로 반환
 
+```python
+# 해당 페이지 내에 a 태그로 연결된 url 추출
+sub_pages = driver.find_elements(by=By.TAG_NAME, value='a')
+
+for sub_page in sub_pages:
+  print(sub_page.get_attribute('href'))
+
+# https://www.naver.com/test/1/
+# https://www.naver.com/test/2/
+# https://www.naver.com/test/3/
+# https://www.naver.com/test/4/
+# https://www.naver.com/test/5/
+```
+
 <br />
 
 By 클래스에 사용할 수 있는 속성은 페이지에서 요소를 찾는 데 사용됩니다. 다음은 클래스별에 사용할 수 있는 속성입니다
