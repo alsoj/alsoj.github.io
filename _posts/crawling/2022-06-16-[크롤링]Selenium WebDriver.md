@@ -112,6 +112,7 @@ browser.switch_to.frame('videoarea')
 ```
 
 ## 팝창 or 탭으로 전환하기
+
 `browser.window_handles`를 통해 해당 브라우저에서 다루고 있는 창을 조회할 수 있고, `switch_to` 함수를 통해 특정 창으로 이동할 수 있다.
 
 ```python
@@ -129,4 +130,23 @@ browser.switch_to.window(browser.window_handles[-1])
 
 # 최초의 메인 창으로 이동
 browser.switch_to.window(browser.window_handles[0])
+```
+
+## 하위에 특정 Element가 존재하는지 확인
+
+```python
+# try / catch 블록을 이용한 방법
+from Selenium.common.exceptions import NoSuchElementException
+
+try:
+  element = driver.find_element(by=By.TAG_NAME, value='a')
+except NoSuchElementException:
+  print("No element found")
+
+# find_elements를 이용한 방법
+elements = driver.driver.find_elements(by=By.TAG_NAME, value='a')
+if not elements:
+  print("No element found")
+else:
+  element = elements[0]
 ```
