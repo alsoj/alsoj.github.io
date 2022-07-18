@@ -111,8 +111,22 @@ browser.switch_to.frame('ID 또는 NAME')
 browser.switch_to.frame('videoarea')
 ```
 
-## popup창으로 전환하기
+## 팝창 or 탭으로 전환하기
+`browser.window_handles`를 통해 해당 브라우저에서 다루고 있는 창을 조회할 수 있고, `switch_to` 함수를 통해 특정 창으로 이동할 수 있다.
 
 ```python
-browser.switch_to.window(browser.window_handles[1])
+browser.window_handles
+
+# 띄워진 순서대로 리스트가 담긴다.
+#['CDwindow-916401BA0B7910D0C3129E6B471B5B19',
+# 'CDwindow-FC884D80F1B7125B2E3CAE6319DAB659',
+# 'CDwindow-A4FDB8CCE540E3BB888E973C594D71C6']
+```
+
+```python
+# 마지막으로 띄워진 팝업 창 or 탭으로 이동
+browser.switch_to.window(browser.window_handles[-1])
+
+# 최초의 메인 창으로 이동
+browser.switch_to.window(browser.window_handles[0])
 ```
