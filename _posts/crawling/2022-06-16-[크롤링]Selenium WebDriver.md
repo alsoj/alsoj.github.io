@@ -130,6 +130,20 @@ browser.switch_to.window(browser.window_handles[-1])
 
 # 최초의 메인 창으로 이동
 browser.switch_to.window(browser.window_handles[0])
+
+# 새로운 탭으로 이동
+browser.switch_to.new_window('tab')
+```
+
+## 최초 tab 외에 모두 닫기
+```python
+def close_new_tabs(browser):
+  tabs = browser.window_handles
+  while len(tabs) != 1 :
+    browser.switch_to.window(tabs[1])
+    browser.close()
+    tabs = browser.window_handles
+  browser.switch_to.window(tabs[0])
 ```
 
 ## 하위에 특정 Element가 존재하는지 확인
